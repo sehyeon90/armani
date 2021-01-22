@@ -8,26 +8,22 @@
 .contact{margin: 20px 0; padding: 10px 20px;border: 1px solid white;}
 
 /*main*/
-div{_border: 1px solid #cccccc; padding: 0px; margin: 0 auto;text-align: center;
+div{border: _1px solid #cccccc; padding: 0px; margin: 0 auto;text-align: center;
 }
 #con{ width: 100%; margin: 0 auto; overflow: hidden;}
-/*#header{width:1280px;  height: 100px; line-height: 70px;}*/
+
 .header_logo img{ width: 300px; height:49px; margin-top: 10px;}
-/*
-#nav{ width: 1920px; height: 50px; background: black; position: relative; padding-left: 0px;}
-#nav ul {width: 1280px; overflow: hidden; color: aliceblue; display: block; margin-left: 300px;}
-#nav ul li{width: 250px; height: 44px; line-height: 40px; text-align: center;list-style: none; float: left; border: 1px; }
-*/
+
 /*_________________________________________________________________________________________________________________________________________________*/
-/*<header>*/
-html{height: 150%;}
-body {margin: 0;}
+/*header상단로고*/
+html, body{height: 100%;}
+con{position: relative; min-height: 100%;}
 
 div#header{ background: white; margin: 0; padding:0; list-style: none; position: fixed; 
     width: 100vw; left: 0; right: 0; top: 0; box-sizing: border-box; color: #000; height: 200px;z-index: 10;}
 #header>.header_logo {
     display: inline-block;  color: #000; position: absolute; width: 100%; list-style: none;
-    background: yellow;
+    background: white;
     
 }
 #header>.header_logo>img {
@@ -36,16 +32,9 @@ div#header{ background: white; margin: 0; padding:0; list-style: none; position:
     color: white; 
     
 }
-/*
 
-#header{ position: fixed; top: 0; left: 0; right: 0; width: 100vw; border-spacing: border-box;}
-#header {z-index: 200; color: #000;}
-#header .header_logo{right: 30px; height: 96px; color: #000; background: white; border-top: 8rem solid #000; opacity: 1;}
 
-#header .header_logo{ transition: top 0.2s ease 0s;}
-*/
-
-/*nav*/
+/*nav메인바*/
 
 .navbar { background: black; margin: 0; padding: 0; list-style: none; width: 100%; transition: transform .3s; 
 position: relative; top: 59px; }
@@ -70,6 +59,34 @@ position: relative; top: 59px; }
 
 #contents .name p {margin: 0 0 10px;}
 #contents .click a{text-decoration: none; border-bottom: 2px solid #ececec; padding: 0 0 .4375rem}
+
+/*main2*/
+.box {
+    width: 100%;
+    height: 650px;
+    background: white;
+    position: relative;
+}
+.box1 {
+    position: absolute;
+    top: -180px;
+    left: 5%;
+    width: 90%;
+    height: 750px;
+    overflow: hidden;
+    background:white;
+}
+.box2{
+    margin-bottom: 100px;
+}
+.box3 {
+    
+    width: 90%;
+    height: 750px;
+    background: white;
+}
+.box3-1 {float: left;}
+.box3-2{float: right;}
 
 
 /*banner*/
@@ -130,9 +147,7 @@ position: relative; top: 59px; }
 .event2 { width: 630px; height: 370px; background: #eee; float: right;}
 
 
-
-
-/*SnsBox*/
+/*메인페이지SnsBox*/
 .sns{width: _1160px;}
 .sns h3{margin-top: 70px; font-size: 25px;}
 .sns p{ margin: 7px;}
@@ -145,4 +160,86 @@ position: relative; top: 59px; }
 
 /*footer*/
 
-#footer{ background: gray; height: 100px; clear: both;}
+footer{position: _absolute; bottom: 0;left:0; right:0; background: #111; height: auto; width: 100vw; padding-top: 50px; _clear: both; color: #fff;}
+.footercontent{display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;}
+.footercontent h3{ font-size: 1.8rem; font-weight: 400; text-transform: capitalize; line-height: 3rem;}
+.footercontent p{max-width: 500px; margin: 10px auto; line-height: 28px; font-size: 14px; }
+.socials{ list-style: none; display: flex; align-items: center; justify-content: center; margin: 1rem 0 3rem 0; }
+.socials li{ margin: 0 10px; }
+.socials a {text-decoration: none; color: #fff;}
+.socials a i { font-size: 1.1rem; transform: color .4s ease;}
+.socials a:hover i{color: aqua;}
+.footer-bottom{ background: #000; width: 100vw; padding: 20px 0; text-align: center;}
+.footer-bottom p{ font-size: 14px; word-spacing: 2px; text-transform: capitalize;}
+.footer-bottom span{text-transform: uppercase; opacity:.4; font-weight:400;}
+
+-------------------------------------------------------------
+/*상세페이지1*/
+#con {}
+#con .banner01 {}
+#con .banner01 .imtext {
+    position: absolute; left: 50%; top: 300px;
+    z-index: 1;
+}
+.banner01 .imtext p {color: #000;}
+/*
+#con .banner01 {
+    position: relative;
+    width: 100%; height: 600px;
+    background: url(../img/foundationmain.png) no-repeat center;
+    background-size: cover; 
+}
+#con .banner01 .imtext {
+    position: absolute; left: 0; top: 50px;
+}
+
+#con .banner01 .imtext p {color: #000;}
+*/
+
+
+.product input[id="slide"] {
+    display: none;
+}
+.product .slidewrap{
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.product .slidelist{
+    white-space: nowrap;
+    font-size: 0;
+}
+.product .slidelist >li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+.product .slidelist >li > a{
+    display: block;
+    position: relative;
+}
+.product .slidelist >li > a img{
+    width: 100%;
+}
+
+.product .slidelist label{
+    position: absolute; 
+    z-index: 10;
+    top: 50%;
+    transition: (-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.product .slidelist .left{
+    left: 30px;
+    background: url(../img/arrow_lb.gif)center center/100% no-repeat;
+}
+.product .slidelist .right{
+    right: 30px;
+    background: url(../img/arrow_rb.gif)center center/100% no-repeat;
+}
+
+.product [id="slide01"]:checked ~ .slidewrap .slidelist >li {transform:translateX(0%);}
+.product [id="slide02"]:checked ~ .slidewrap .slidelist >li {transform:translateX(-100%);}
+.product [id="slide03"]:checked ~ .slidewrap .slidelist >li {transform:translateX(-200%);}
